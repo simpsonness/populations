@@ -42,7 +42,6 @@ class CSVReader
         h[header] = value unless value.empty?
      end
      h
-     end
   end
 end
 
