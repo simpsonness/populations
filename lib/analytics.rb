@@ -28,6 +28,12 @@ class Analytics
     end
   end
 
+
+  def how_many
+    p "There are #{@areas.length} areas"
+  end
+  
+
   def smallest_pop
     sorted = @areas.sort do |x, y|
       x.estimated_population <=> y.estimated_population
