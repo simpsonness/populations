@@ -10,6 +10,6 @@ class Setup
     csv.read do |item|
       @areas << Area.new(item)
     end
-     self
+    self
   end
 end
