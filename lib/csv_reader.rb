@@ -33,12 +33,16 @@ class CSVReader
       # convert to a symbol
       h.underscore.to_sym
     end
-       def create_hash(values)
-         h = {}
-          @headers.each_with_index do |header, i|
-          end
-         h
-       end
+  end
+  def create_hash(values)
+     h = {}
+     @headers.each_with_index do |header, i|
+        # remove new lines from the value
+        value = values[i].strip.gsub('"', '')
+        h[header] = value unless value.empty?
+     end
+     h
+     end
   end
 end
 
