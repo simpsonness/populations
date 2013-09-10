@@ -11,5 +11,5 @@ class Setup
       @areas << Area.new(item)
      end
      self
-   end
- end
+  end
+end
