@@ -9,7 +9,7 @@ class Setup
     @areas =[]
     csv.read do |item|
       @areas << Area.new(item)
-     end
+    end
      self
   end
 end
