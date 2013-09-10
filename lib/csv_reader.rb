@@ -9,10 +9,10 @@ class CSVReader
     self.headers = f.readline
 
     # Loop over the lines
-    While (!f.eof? && next_line = f.readline)
-    values = next_line.split(',')
-    hash = create_hash(values)
-    yield(hash)
+    while (!f.eof? && next_line = f.readline)     
+      values = next_line.split(',')
+      hash = create_hash(values)
+      yield(hash)
     end
   end
 
